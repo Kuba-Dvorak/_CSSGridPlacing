@@ -9,6 +9,7 @@
   <style>
     .container {
       display: grid;
+      grid-auto-flow: row;
       gap: 1.6667rem;
       grid-template-columns: repeat(5, 1fr 2fr);
       grid-template-rows: repeat(10, 50px);
@@ -37,11 +38,11 @@
     }
 
     .item20 {
-      grid-row: 4/7;
+      grid-row: 4/ span 3;
     }
 
     .item18 {
-      grid-column: 5/9;
+      grid-column: span 4/9;
     }
 
   </style>
